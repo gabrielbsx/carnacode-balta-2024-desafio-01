@@ -97,6 +97,10 @@ input[type="checkbox"]:checked:before {
   background-color: #2E1462;
 }
 
+.splash {
+  pointer-events: none;
+}
+
 .splash-animation {
   position: fixed;
   width: 100%;
@@ -119,16 +123,13 @@ input[type="checkbox"]:checked:before {
 }
 
 @keyframes zoom-in {
-  50% {
-    width: 10rem;
-  }
-
-  60% {
-    width: calc(10rem * 0.8);
+  40% {
+    margin-top: calc(-10rem * 0.8);
   }
 
   100% {
-    width: 250%;
+    /* width: 250%; */
+    margin-top: 100rem;
   }
 }
 
@@ -139,6 +140,7 @@ input[type="checkbox"]:checked:before {
 
   100% {
     opacity: 0;
+    pointer-events: none;
   }
 }
 

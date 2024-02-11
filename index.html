@@ -10,8 +10,11 @@
   </head>
 
   <body class="bg-primary flex flex-col items-center justify-center min-h-screen">
-		<section class="container mt-20">
-			<form class="gap-1 rounded px-5 pt-5 pb-10 flex flex-col items-center justify-center bg-white" method="POST" action="">
+		<div class="bg-primary splash splash-animation">
+      <img class="logo logo-splash" src="assets/icon-no-bg.png" />
+    </div>
+		<section class="container max-w-xl mt-20">
+			<form class="gap-1 rounded px-5 pt-5 pb-10 flex flex-col items-center justify-center bg-white" method="POST">
 				<div class="-mt-20">
 					<img class="logo" src="assets/icon-no-bg.png" />
 				</div>
@@ -27,22 +30,22 @@
 				<div class="w-full">
 					<input class="w-full" placeholder="Seu e-mail" type="text" />
 				</div>
-				<div class="w-full flex">
+				<div class="w-full">
 					<input class="w-full" placeholder="Seu senha" type="text" />
 				</div>
 				<div class="w-full flex">
-					<label class="flex justify-center">
-						<input class="transition-all duration-300" type="checkbox" checked />
+					<input class="transition-all duration-300" type="checkbox" checked id="not-robot" />
+					<label class="flex justify-center" for="not-robot">
 						<span class="ml-2 text-gray">Não sou um robô</span>
 					</label>
 				</div>
 				<div class="w-full flex">
-					<button type="submit" class="w-full btn btn-primary transition-all duration-500">
+					<button type="submit" class="w-full cursor-pointer btn btn-primary transition-all duration-500">
 						Fazer Login
 					</button>
 				</div>
 				<div class="w-full flex">
-					<a class="w-full text-center btn btn-secondary transition-all duration-500">
+					<a class="w-full cursor-pointer text-center btn btn-secondary transition-all duration-500">
 						Não tenho um acesso
 					</a>
 				</div>
